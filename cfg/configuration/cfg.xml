@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform description="Mexico-USA migration" name="TEST">
+    <hosts>
+        <host name="localhost">
+            <containers>
+                <container name="MigrationModel">
+                    <agents>
+                        <agent name="Supervisor" type="Supervisor"/>
+			<agent name="Clock" type="Clock"/>                               
+                    </agents>
+                </container>
+				
+            </containers>
+        </host>            
+    </hosts>
+    <agentPools>
+      <agentPool name="Migrant" size="200" type="Migrant">
+	<parameters>
+	</parameters>
+      </agentPool>
+    </agentPools>
+
+</platform>

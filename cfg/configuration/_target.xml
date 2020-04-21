@@ -1,0 +1,20 @@
+<platform name="TEST" description="Mexico-USA migration" backupsNumber="0">
+	<hosts>
+		<host name="localhost" backupAllowed="false">
+			<containers>
+				<container name="MigrationModel" split="false">
+					<agents>
+						<agent name="Supervisor" type="Supervisor">
+						</agent>
+						<agent name="Clock" type="Clock">
+						</agent>
+					</agents>
+				</container>
+			</containers>
+		</host>
+	</hosts>
+	<agentPools>
+		<agentPool name="Migrant" type="Migrant" size="200">
+		</agentPool>
+	</agentPools>
+</platform>
