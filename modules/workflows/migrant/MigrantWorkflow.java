@@ -226,7 +226,7 @@ public class MigrantWorkflow extends WorkflowBehaviour {
 			country = "MEXICO";
 		}
 		
-		writeFile.write("STEP " + cont + '\t' + "MIGRATED " + flagMig + '\t' + "ISRETURN " + flagRet + '\t' + "VIAGGI " + contViaggi + '\t' + "COUNTRY " + country + '\t' + "FIRM " + getKey(Supervisor.firm,alpha) + '\n');
+		writeFile.write("STEP " + cont + '\t' + "POS I " + selfI + '\t' + "POS J " + selfJ + '\t' + "MIGRATED " + flagMig + '\t' + "ISRETURN " + flagRet + '\t' + "VIAGGI " + contViaggi + '\t' + "COUNTRY " + country + '\t' + "FIRM " + getKey(Supervisor.firm,alpha) + '\n');
 		flagMig = false;
 		flagRet = false;
 		
