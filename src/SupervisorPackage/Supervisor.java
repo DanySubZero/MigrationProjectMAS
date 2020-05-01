@@ -26,7 +26,7 @@ public class Supervisor extends WorkflowEngineAgent {
 	public static ArrayList<Integer> migI,migJ;
 	public static Map<String,Integer> contHomeMap = new ConcurrentHashMap<String,Integer>();
 	public static Map<String,AID> linkComm = new ConcurrentHashMap<String,AID>();
-	public static Map<String,Double> firm = new HashMap<String,Double>();
+	public static Map<String,Double> firm = new ConcurrentHashMap<String,Double>();
 	public final static ArrayList<Double> usaWage = new ArrayList(Arrays.asList(8173.44,8768.16,9374.4,10104.,10833.6,11573.76,12570.72,13108.32,13736.64,14304.,14641.44,14873.76,15223.68,15677.76,16228.8,16788.,17208.48,17676.,18187.68,18778.56,19203.36,19837.44,20729.28,21530.88,22231.2,23088.48,23701.92,24324.,24866.88,25396.32,26127.84,27257.76,28321.92));
 	public final static ArrayList<Double> mexWage = new ArrayList(Arrays.asList(2648.266423,2840.960932,3037.388023,3273.784837,3510.181652,3750.,4330.,4320.,4260.,4510.,4720.,4510.,4680.,5170.,5490.,5900.,6280.,6550.,6690.,7000.,6490.,6860.,7410.,7740.,8070.,8780.,8890.,9140.,10480.,11140.,11980.,13060.,13890.));
 	
